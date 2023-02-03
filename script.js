@@ -5,7 +5,7 @@ depButton.addEventListener('click', function (){
         'qwe',
         'height=500,width=500,left=500,top=200'
     );
-    setTimeout(()=>{
-        paymentWindow.document.location = './payment.html'
-    },2000)
+    // setTimeout(()=>{
+    //     paymentWindow.document.location = './payment.html'
+    // },2000)
 });
