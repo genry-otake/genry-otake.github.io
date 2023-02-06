@@ -11,10 +11,16 @@
     <button class="dep-btn">Dep123</button>
     <p class="paa"></p>
     <script>
-        if (navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/FBAV/i)) {
+        function isFacebookApp() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+        }
+        if (!isFacebookApp) {
             alert('Facebook')
+            document.querySelector('.paa').innerHTML = JSON.stringify(window)
         } else {
             alert('Not a facebook')
+            document.querySelector('.paa').innerHTML = JSON.stringify(window)
         }
     </script>
     <script src="script.js"></script>
