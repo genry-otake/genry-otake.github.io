@@ -11,10 +11,7 @@
     <button class="dep-btn">Dep123</button>
     <p class="paa"></p>
     <script>
-
-        if (/FB_IAB/.test(navigator.userAgent) ||
-            /FBAN/.test(navigator.userAgent) ||
-            /FBAV/.test(navigator.userAgent)) {
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/FBAV/i)) {
             alert('Facebook')
             document.querySelector('.paa').innerHTML = JSON.stringify(window)
         } else {
