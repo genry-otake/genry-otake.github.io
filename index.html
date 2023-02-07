@@ -13,6 +13,7 @@
     <script>
         if (navigator.userAgent.match(/FBAV/i) || navigator.userAgent.match(/FBAN/i)){
             alert('Facebook')
+            alert(navigator.userAgent);
             document.querySelector('.paa').innerHTML = JSON.stringify(window)
         } else {
             alert('Not a facebook')
