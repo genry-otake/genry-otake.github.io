@@ -11,13 +11,13 @@
     <button class="dep-btn">Dep12345</button>
     <p class="paa"></p>
     <script>
-        if (document.referrer.match(/t.co/i) && navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)){
-            alert('Twitter')
+        if (document.referrer.match(/t.me/i) && navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)){
+            alert('TG')
             alert(navigator.userAgent);
             alert(document.referrer);
             document.querySelector('.paa').innerHTML = JSON.stringify(window)
         } else {
-            alert('Not a twitter');
+            alert('Not a tg');
             alert(navigator.userAgent);
             alert(document.referrer);
             document.querySelector('.paa').innerHTML = JSON.stringify(window)
