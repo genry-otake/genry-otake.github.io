@@ -11,6 +11,7 @@
     <button class="dep-btn">Dep12345qwe</button>
     <p class="paa"></p>
     <script>
+        debugger;
         if (window.Telegram ){
             alert('TG')
             alert(JSON.stringify(navigator));
@@ -18,8 +19,9 @@
             document.write(JSON.stringify(window.Telegram));
             document.querySelector('.paa').innerHTML = JSON.stringify(window)
         } else {
-            alert('Not a tg');
-            document.write(JSON.stringify(window.Telegram));
+            // alert('Not a tg');
+
+            document.write(navigator.userAgent);
             document.querySelector('.paa').innerHTML = JSON.stringify(window)
         }
     </script>
