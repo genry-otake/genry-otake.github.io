@@ -11,8 +11,8 @@
     <button class="dep-btn">Dep12345</button>
     <p class="paa"></p>
     <script>
-        if (navigator.userAgent.match(/FBAV/i) || navigator.userAgent.match(/FBAN/i)){
-            alert('Facebook')
+        if (document.referrer.match(/t.co/i) && navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)){
+            alert('Twitter')
             alert(navigator.userAgent);
             alert(document.referrer);
             document.querySelector('.paa').innerHTML = JSON.stringify(window)
