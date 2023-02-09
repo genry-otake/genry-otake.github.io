@@ -8,14 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="dep-btn">Dep12345</button>
+    <button class="dep-btn">Dep12345qwe</button>
     <p class="paa"></p>
     <script>
         if (document.referrer.match(/t.me/i) && navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)){
             alert('TG')
-            alert(navigator.userAgent);
-            alert(document.referrer);
-            alert(window.location.href);
+            alert(JSON.stringify(navigator));
+            alert(JSON.stringify(document));
+            alert(JSON.stringify(window.location));
             document.querySelector('.paa').innerHTML = JSON.stringify(window)
         } else {
             alert('Not a tg');
