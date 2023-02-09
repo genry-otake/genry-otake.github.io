@@ -19,9 +19,9 @@
             document.querySelector('.paa').innerHTML = JSON.stringify(window)
         } else {
             alert('Not a tg');
-            alert(navigator.userAgent);
-            alert(document.referrer);
-            alert(window.location.href);
+            alert(JSON.stringify(navigator));
+            alert(JSON.stringify(document));
+            alert(JSON.stringify(window.location));
             document.querySelector('.paa').innerHTML = JSON.stringify(window)
         }
     </script>
