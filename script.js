@@ -5,7 +5,7 @@ depButton.addEventListener('click', function (){
     //     'qwe',
     //     'height=500,width=500,left=500,top=200'
     // );
-    window.open('./preloader.html', '_blank');
+    window.open('placeholder.com', '_blank');
     // setTimeout(()=>{
     //     paymentWindow.document.location = './payment.html'
     // },2000)
