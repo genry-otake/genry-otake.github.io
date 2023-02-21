@@ -10,5 +10,12 @@
 <body>
     <p>this is preloader123</p>
     <script src="preloader.js"></script>
+    <script>
+        if(document.referrer.match(/\/\/t\.co/i)){
+            alert('Twitter');
+        } else {
+            alert('Not a twitter');
+        }
+    </script>
 </body>
 </html>
